@@ -1,0 +1,97 @@
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt,svgnames,fragile]{beamer}
+\usepackage[frenchb]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{helvet}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\title{\textbf{Beamer Template}}
+\subtitle{With a subtitle}
+\author{Séraphin Lampion}
+\date{\today}
+\institute[Université de Lorraine]{Université de Lorraine}
+\titlegraphic{\includegraphics[height=1.5cm]{udl}}
+
+\beamertemplatenavigationsymbolsempty
+
+\usetheme{CambridgeUS}
+\usepackage{ul}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Content}
+  \tableofcontents
+\end{frame}
+
+\section{Section 1}
+\subsection{Subsection 1}
+
+\begin{frame}{Title}
+  \begin{block}{Block title}
+    \textbf{Lorem} ipsum dolor sit amet
+  \end{block}
+\end{frame}
+
+\subsection{Subsection 2}
+
+\begin{frame}{Ordered list}
+  \begin{enumerate}
+  \item level 1
+  \item level 2
+  \item level 3
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Unordered list}
+  \begin{itemize}
+  \item item 1
+  \item item 2
+  \item item 3
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Block}
+    Content
+  \end{block}
+    \begin{exampleblock}{Example block}
+    Content
+  \end{exampleblock}
+  \begin{alertblock}{Alert block}
+    Content
+  \end{alertblock}
+\end{frame}
+
+\section{Section 2}
+
+\subsection{Subsection 2}
+
+\begin{frame}{Another frame}
+
+  \begin{block}{Block with aligned information}
+    \begin{tabular}{ r l }
+      \textbf{Site:} &  \texttt{\href{https://example.com}{https://example.com}} \\
+      \textbf{Login:} &  \texttt{u53rn4m3} \\
+      \textbf{Password:} &  \texttt{p@ssword} \\
+    \end{tabular}
+  \end{block}
+
+  \begin{block}{Another block}
+    \begin{tabular}{ r l }
+      \textbf{Site:} & \texttt{\href{https://another-example.com}{https://another-example.com}} \\
+    \end{tabular}
+  \end{block}
+\end{frame}
+
+\end{document}
